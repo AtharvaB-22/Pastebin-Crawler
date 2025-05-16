@@ -27,6 +27,7 @@ A Python script to scrape Pastebin's public archive for pastes containing crypto
 - This will be updated as we implement more features.
 - Archive Scraper: Extracts up to 30 paste IDs from https://pastebin.com/archive using `requests` and `BeautifulSoup`.
 - Content Fetcher: Asynchronously fetches raw paste content using `aiohttp` in batches of 5, with retry logic and rate-limiting.
+- Keyword Detector: Performs case-insensitive matching for keywords (`crypto`, `bitcoin`, `ethereum`, `blockchain`, `t.me`) in paste content.
 
 ## Configuration
 All constants are defined in `config.py`, including:
