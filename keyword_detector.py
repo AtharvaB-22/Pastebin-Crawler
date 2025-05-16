@@ -1,17 +1,7 @@
-# keyword_detector.py
-
-import logging
 from config import KEYWORDS
+from logger import get_logger
 
-# Configure basic logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.StreamHandler()  # Log to console
-    ]
-)
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 def detect_keywords(paste_id, content):
     """
