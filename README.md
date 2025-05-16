@@ -25,6 +25,7 @@ A Python script to scrape Pastebin's public archive for pastes containing crypto
 - Implements rate-limiting and proxy rotation (optional).
 - Logs all activities and errors.
 - This will be updated as we implement more features.
+- Archive Scraper: Extracts up to 30 paste IDs from https://pastebin.com/archive using `requests` and `BeautifulSoup`.
 
 ## Configuration
 All constants are defined in `config.py`, including:
